@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue;
+}
+#guessBank {
+    display: inline-flex;
+    border: solid black 2px;
+    
+}
