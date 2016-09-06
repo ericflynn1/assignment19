@@ -39,12 +39,16 @@ function revealOrNot(words, guess) {
     let reveal = words.map(function (word) {
         return word.split('').map(function (letter) {
             if (letter === guess) return letter;
-            else return ' ';
+            else return '';
         })
     })
     console.log(revealOrNot())
 };
-   
+
+document.getElementById('resetting').addEventListener('click', function () {
+    location.reload();
+});
+
 window.addEventListener('load', function () {
     bopIt(all_words);
 
@@ -72,4 +76,4 @@ window.addEventListener('load', function () {
            console.log('doh you got one right');
            
        }
-    });
+    })
